@@ -30,4 +30,9 @@ prisma db pull --schema=/app/prisma/schema.prisma
 echo "[prisma] schema.prisma generado en /app/prisma/schema.prisma"
 
 # Levanta Prisma Studio
-exec prisma studio --schema=/app/prisma/schema.prisma --port 5555 --host 0.0.0.0
+# Levanta Prisma Studio
+exec prisma studio \
+  --schema=/app/prisma/schema.prisma \
+  --port 5555 \
+  --hostname 0.0.0.0 \
+  --browser none
